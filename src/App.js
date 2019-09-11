@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
+import candle from './svgs/candle.svg';
 import './App.css';
+import EmailSignUp from './components/EmailSignUp';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="center-logo">
+                <img src={candle} className="App-logo" alt="logo"/>
+            </div>
+            <div className="landing-page-text">
+                <div className="hype-line text-left">
+                    <h1>
+                        CALLING ALL YOU CREATIVE PEOPLE,
+                    </h1>
+                </div>
+                <div className="hype-line-2">
+                    <h1>
+                        LET'S UNITE.
+                    </h1>
+                </div>
+                <div>
+                    <h2 className="description">
+                        Helping designers, developers, and content creators find each other.
+                    </h2>
+                </div>
+                <div>
+                    <h2 className="tag-line">
+                        Connect, Collaborate, Create.
+                    </h2>
+                </div>
+                <div className="email-sign-up">
+                    <EmailSignUp/>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.submit-email {
+    display: flex;
+}
+
+.sign-up {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    position: absolute;
+    left: 50vmin;
+    width: 126px;
+    height: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    size: 20px;
+    color: #000000;
+}
